@@ -449,7 +449,7 @@ footer .copy{font-size:0.78rem;color:#d1d5db;}
         <label for="f-phone">Phone Number</label>
         <input type="tel" id="f-phone" placeholder="(801) 555-0100" autocomplete="tel">
       </div>
-      <button class="form-btn" id="f-btn" onclick="submitLead()">Call Me Now — It is Free</button>
+      <button type="button" class="form-btn" id="f-btn">Call Me Now — It is Free</button>
       <p class="form-note">Your demo call arrives within 60 seconds. No commitment, no sales pitch — just the product.</p>
     </div>
     <div class="confirm" id="confirm">
@@ -478,7 +478,7 @@ footer .copy{font-size:0.78rem;color:#d1d5db;}
   <span class="copy">© 2026 Aventra AI</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false">
 // Add 'on' class immediately for any elements already in view
 document.querySelectorAll(".reveal").forEach(el => el.classList.add("on"));
 const obs = new IntersectionObserver(es => es.forEach(e => {
@@ -507,6 +507,7 @@ async function submitLead(){
     alert("Something went wrong. Please try again.");
   }
 }
+document.getElementById("f-btn").addEventListener("click",submitLead);
 </script>
 </body>
 </html>
