@@ -496,4 +496,17 @@ async function submitLead(){
   try{
     await fetch("https://hook.us2.make.com/ejyebea46t5vh4hkbkhi10c9cg64zx8j",{
       method:"POST",
-      headers:{"Content-Type":"applica
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({name,company,phone})
+    });
+    document.getElementById("the-form").style.display="none";
+    document.getElementById("confirm").style.display="flex";
+  }catch(err){
+    btn.disabled=false;
+    btn.textContent="Call Me Now — It is Free";
+    alert("Something went wrong. Please try again.");
+  }
+}
+</script>
+</body>
+</html>
