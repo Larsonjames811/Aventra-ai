@@ -496,7 +496,8 @@ async function submitLead(){
   try{
     await fetch("https://hook.us2.make.com/ejyebea46t5vh4hkbkhi10c9cg64zx8j",{
       method:"POST",
-      headers:{"Content-Type":"application/json"},
+      mode:"no-cors",
+      headers:{"Content-Type":"text/plain"},
       body:JSON.stringify({name,company,phone})
     });
     document.getElementById("the-form").style.display="none";
