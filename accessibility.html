@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility Statement | Aventra AI</title>
+<meta name="description" content="Aventra LLC's accessibility target (WCAG 2.2 AA), what we checked, known limitations, and how to report a barrier or book without the web.">
+<link rel="canonical" href="https://aventra-ai.com/accessibility.html">
+<link rel="icon" type="image/png" sizes="500x500" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --navy:#111827;
+  --navy2:#1f2937;
+  --blue:#2563eb;
+  --blue2:#1d4ed8;
+  --white:#ffffff;
+  --off:#f9fafb;
+  --border:#e5e7eb;
+  --muted:#6b7280;
+  --text:#111827;
+  --light-blue:#eff6ff;
+}
+html{scroll-behavior:smooth;}
+body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.7;}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip-link:focus{left:16px;top:12px;width:auto;height:auto;z-index:200;background:var(--navy);color:var(--white);padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none;}
+
+/* TOP BAR */
+.topbar{height:64px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--border);background:var(--white);}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-size:1.05rem;font-weight:800;letter-spacing:-0.02em;}
+.brand img{height:32px;width:auto;}
+.topbar-cta{background:var(--navy);color:var(--white);padding:9px 20px;border-radius:8px;font-size:0.83rem;font-weight:600;text-decoration:none;white-space:nowrap;transition:background 0.15s;}
+.topbar-cta:hover{background:var(--navy2);}
+
+/* ARTICLE */
+main{padding:56px 6% 88px;}
+article{max-width:720px;margin:0 auto;}
+.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;}
+h1{font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-0.03em;line-height:1.15;color:var(--navy);margin-bottom:12px;}
+.updated{font-size:0.88rem;color:var(--muted);margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.lede{font-size:1.05rem;color:var(--muted);margin-bottom:12px;}
+h2{font-size:1.25rem;font-weight:700;color:var(--navy);margin:40px 0 12px;letter-spacing:-0.01em;}
+h3{font-size:1rem;font-weight:700;color:var(--navy);margin:22px 0 8px;}
+p,li{font-size:0.98rem;color:var(--text);}
+p{margin-bottom:14px;}
+ul,ol{padding-left:22px;margin-bottom:14px;}
+li{margin-bottom:8px;}
+a{color:var(--blue);}
+a:hover{color:var(--blue2);}
+.callout{background:var(--off);border-left:3px solid var(--blue);padding:16px 20px;border-radius:8px;margin:20px 0;}
+.callout p:last-child{margin-bottom:0;}
+.todo{background:#fef3c7;color:#92400e;padding:1px 5px;border-radius:4px;font-weight:600;}
+.toc{list-style:none;padding:0;margin:0 0 8px;display:flex;flex-wrap:wrap;gap:8px 18px;}
+.toc li{margin:0;font-size:0.88rem;}
+.toc a{text-decoration:none;color:var(--muted);}
+.toc a:hover{color:var(--navy);text-decoration:underline;}
+.fine{font-size:0.85rem;color:var(--muted);margin-top:40px;padding-top:20px;border-top:1px solid var(--border);}
+
+/* FOOTER (same as index.html) */
+footer{background:var(--white);border-top:1px solid var(--border);padding:36px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+.footer-left{display:flex;align-items:center;gap:10px;}
+.footer-left img{height:28px;width:auto;}
+.footer-brand{font-size:0.95rem;font-weight:800;color:var(--navy);}
+.footer-links{display:flex;gap:24px;align-items:center;flex-wrap:wrap;}
+.footer-links a{font-size:0.8rem;color:var(--muted);text-decoration:none;transition:color 0.15s;}
+.footer-links a:hover{color:var(--navy);}
+footer .copy{font-size:0.78rem;color:var(--muted);}
+
+@media(max-width:680px){
+  .topbar{padding:0 5%;}
+  main{padding:40px 5% 64px;}
+  footer{padding:28px 5%;}
+  .footer-links{gap:12px 16px;}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="topbar">
+  <a class="brand" href="/"><img src="favicon.png" alt="">Aventra AI</a>
+  <a href="https://cal.com/james-larson-cbeeva/full-ai-assesment" target="_blank" rel="noopener" class="topbar-cta">Book Your Assessment</a>
+</header>
+
+<main id="main">
+  <article>
+
+    <p class="eyebrow">Legal</p>
+    <h1>Accessibility Statement</h1>
+    <p class="updated">Last updated October 10, 2026. Last reviewed October 10, 2026.</p>
+
+    <p class="lede">We want everyone to be able to read this site and book with us, including people who use screen readers, keyboards, magnification or voice control. If something gets in your way, tell us and we will fix it or get you the same thing another way.</p>
+
+    <h2 id="target">Our target</h2>
+    <p>We build to the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. We do not use an accessibility overlay widget. When we find a problem we fix it in the page code.</p>
+
+    <h2 id="review">What we checked on October 10, 2026</h2>
+    <ul>
+      <li>An automated Lighthouse accessibility scan of the home page and of each legal page.</li>
+      <li>A manual review of the page code for a main landmark and skip link, heading order, page language, text alternatives on images, link text, color contrast and visible keyboard focus.</li>
+      <li>Keyboard operation of the FAQ accordion on the home page, which now reports its open and closed state to assistive technology.</li>
+    </ul>
+    <p>Fixes made in this review: added a skip link and a main landmark, raised the contrast of two low-contrast text elements, added expanded-state announcements to the FAQ buttons, and honored the "reduce motion" browser setting for animations.</p>
+
+    <h2 id="limits">Known limitations</h2>
+    <ul>
+      <li><strong>Booking and payment happen on other companies' pages.</strong> Booking uses Cal.com and payment uses Stripe. We cannot change their code. If you have trouble with either, contact us and we will book or invoice you another way.</li>
+      <li><strong>The client logo strip scrolls on its own.</strong> It pauses when you hover over it and stops if your browser is set to reduce motion, but it does not yet have a pause button.</li>
+      <li><strong>Some content fades in as you scroll.</strong> If your browser is set to reduce motion, it appears without animation.</li>
+    </ul>
+
+    <h2 id="report">Report a barrier</h2>
+    <p>Email <a href="mailto:James@aventra-ai.com">James@aventra-ai.com</a> or call <span class="todo">[JAMES: phone number]</span>. Tell us the page, what you were trying to do and what went wrong. We will respond within 5 business days and tell you how we will fix it or give you the information another way.</p>
+
+    <h2 id="offline">Book without the web</h2>
+    <p>If the online booking or payment pages do not work for you, email <a href="mailto:James@aventra-ai.com">James@aventra-ai.com</a> or call <span class="todo">[JAMES: phone number]</span>. We will schedule your session over email or phone and arrange payment another way.</p>
+
+  </article>
+</main>
+
+<footer>
+  <div class="footer-left">
+    <img src="favicon.png" alt="">
+    <span class="footer-brand">Aventra LLC</span>
+  </div>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/aventraai/" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:James@aventra-ai.com">James@aventra-ai.com</a>
+    <a href="https://cal.com/james-larson-cbeeva/full-ai-assesment" target="_blank" rel="noopener">Book a Demo</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="accessibility.html">Accessibility</a>
+  </div>
+  <span class="copy">&copy; 2026 Aventra LLC</span>
+</footer>
+
+<!-- Drafted in-house on October 10, 2026 for review by a Utah business attorney. Not legal advice. -->
+</body>
+</html>
